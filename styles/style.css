@@ -34,23 +34,44 @@ a:hover {
 	font-size: 23px;
 }
 
-#clock {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-}
-
-.timer {
-    width: 50%;
-    font-size: 6rem;
-    height: 80px;
-    border: none;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 10px;
-}
+#pomodoro {
+    height: 20rem;
+    width: 40rem;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #timerTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #time {
+    height: 8rem;
+    width: 60%;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #time > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #time > div:nth-of-type(2) {
+    padding-bottom: 0.5rem;
+  }
+  
+  #min, #sec {
+    height: 5rem;
+    width: 5rem;
+  }
 
 button {
     height: 70px;
@@ -62,16 +83,16 @@ button {
     color: black;
 }
 
-button:hover {
-    background-color: #6495ff;
+#pausebtn:hover {
+    background-color: #64d3ff;
 }
 
-.clock-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    padding: 20px;
+#startbtn:hover {
+    background-color: #7eff64;
+}
+
+#stopbtn:hover {
+    background-color: #ff6479;
 }
 
 footer {
