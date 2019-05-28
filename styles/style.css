@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-	font-size: 23px;
+	text-decoration: underline;
 }
 
 #pomodoro {
